@@ -12,4 +12,14 @@ router.get('/:id([0-9])', function (req, res) {
         })
 })
 
+
+router.delete('/delete/:id([0-9]*)', function ( req,res ) {
+    utils.executeQuery("DELETE FROM SUBTASKS WHERE idsubtask=$1;",
+        [req.params.id], function (result) {
+            console.log('subtask  deleted')
+            res.end()
+
+        })
+} )
+
 module.exports = router
