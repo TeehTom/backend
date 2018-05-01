@@ -1,4 +1,4 @@
 # Lancer d'abord le serveur sur node : 
-node app.js
+<code>node app.js</code>
 # Lancer ensuite l'application dans une nouvelle fenêtre
-npm start
+<code>npm start</code>
